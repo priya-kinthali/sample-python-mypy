@@ -4,13 +4,11 @@ from invoke import task
 from invoke.context import Context
 
 from python_project_template import __version__
-from python_project_template.main  import foo
 
 PACKAGE_NAME = "python_project_template"
 VERSION_FILE = f"{PACKAGE_NAME}/__init__.py"
 SOURCES = " ".join(["python_project_template", "tests", "tasks.py"])
 
-foo()
 @task
 def clean(ctx: Context) -> None:
     """clean

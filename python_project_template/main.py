@@ -1,5 +1,6 @@
 import json
 import os
+from tests import test_version
 
 os.environ["TZ"] = "UTC"
 
